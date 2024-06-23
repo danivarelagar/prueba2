@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudades Visitadas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7ie1kqFh46YYA4lPpvo5DElX8HGv4LI+6Cr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-5 mb-4">
+        <div class="container">
+            <h1 class="fw-light">Ciudades Visitadas</h1>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form id="form-ciudad" class="mb-4">
+                    <div class="mb-3">
+                        <input type="text" id="nombre-ciudad" class="form-control" placeholder="Nombre de la ciudad" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" id="mejor-mes" class="form-control" placeholder="Mejor mes para visitar" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success">Agregar Ciudad</button>
+                    </div>
+                </form>
+                <ul id="lista-ciudades" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-EdOiqTBP6AVciulVw/UGQ9ds45shhtl9GHG92N6c8UBvjeK2Av7oLqXwLyZ/6bX6" crossorigin="anonymous"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
